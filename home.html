@@ -3,6 +3,7 @@
 <head>
     <meta charset = "utf-8">
     <style>
+
         body {
             margin: 0;
         }
@@ -20,22 +21,43 @@
             border-right: 2px solid black;
             width: 200px;
             margin: 0px;
+            padding-left: 0px;
         }
+
+        #_section {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+
+        ul {
+            text-align: center;
+        }
+
+        ul li {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
+        }
+
     </style>
 </head>
 <body>
-    <h1 id = "main_title">그림사랑</h1>
-    <div id = "side_menu">
-        <ul id = "side_contents">
-            <li>Introduction</li>
-            <li>Members</li>
-            <li>Gallery</li>
-            <li>Photo</li>
-            <li>Event</li>
-        </ul>
-    </div>
-    <div>
-        <p>This is prototype Paragraph.</p>
+    <header>
+        <h1 id = "main_title">그림사랑</h1>
+    </header>
+    <div id = "_section">
+        <nav id = "side_menu">
+            <ul id = "side_contents">
+                <li>- Introduction -</li>
+                <li>- Members -</li>
+                <li>- Gallery -</li>
+                <li>- Photo -</li>
+                <li>- Event -</li>
+            </ul>
+        </nav>
+        <div>
+            <p>This is prototype Paragraph.</p>
+        </div>
     </div>
 </body>
 </html>
